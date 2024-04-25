@@ -115,7 +115,7 @@ const Conference = () => {
         <option name="speaker" value="speaker">Speaker</option>
       </select>
       <button onClick={() => {
-        joinConference(role)
+        joinConference(role, conference)
       }}>Join Conference</button>
     </Container> : <div>
       <p><Link to="/login">Login</Link> to access this page</p>
