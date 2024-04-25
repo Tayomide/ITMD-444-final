@@ -15,6 +15,10 @@ const Conference = () => {
     console.log(role)
   }, [role])
 
+  emailjs.init({
+    publicKey: "AxPxZbeBlBHCGYuHi"
+  })
+
   const formatStamp = (stamp) => {
     console.log(stamp)
     const date = new Date(Number(stamp))
